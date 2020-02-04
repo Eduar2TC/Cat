@@ -14,7 +14,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         catImageView.layer.masksToBounds = true
-        catImageView.layer.cornerRadius = catImageView.bounds.width / 2.8
+        catImageView.layer.cornerRadius = catImageView.bounds.width / 2;
+        catImageView.layer.cornerRadius = catImageView.bounds.height / 2;
     }
     var cadena: String = "";
     @IBOutlet weak var etiquetaNombre: UILabel!
@@ -23,13 +24,39 @@ class ViewController: UIViewController {
     var myCatObject: Cat?; //   Object type Cat
 
     @IBAction func creaGato(_ sender: Any) {
-        self.myCatObject = Cat();
-        self.cadena = myCatObject!.crearGato(nombre: "Pepito", color: "Manchado", edad: 7); //create String from object
-        self.cajaDeTexto?.text = self.cadena;
-        
-        self.catImageView.image = UIImage(named: "pepito.jpg"); //assign imageFile (Hacerlo diminamicamente por medio de la imagen)
-        self.etiquetaNombre.text = myCatObject?.getNombre();
-        
+        self.myCatObject = Cat(); //instance cat
+        //SWICHING CATS
+        var numeroGato = Int.random(in: 1 ... 4);
+        switch numeroGato {
+        case 1:
+            self.cadena = myCatObject!.crearGato(nombre: "Pepito", color: "Manchado", edad: 7); //create String from object
+            self.cajaDeTexto?.text = self.cadena;
+            self.catImageView.image = UIImage(named: "pepito.jpg"); //assign imageFile (Hacerlo diminamicamente por medio de la imagen)
+            self.etiquetaNombre.text = myCatObject?.getNombre();
+        case 2:
+            self.cadena = myCatObject!.crearGato(nombre: "Ojos", color: "Blanco", edad: 7); //create String from object
+            self.cajaDeTexto?.text = self.cadena;
+            self.catImageView.image = UIImage(named: "gato_ojos.jpg");
+            self.etiquetaNombre.text = myCatObject?.getNombre();
+            
+        case 3:
+            self.cadena = myCatObject!.crearGato(nombre: "Sonrisas rayas", color: "Rayado", edad: 7); //create String from object
+            self.cajaDeTexto?.text = self.cadena;
+            self.catImageView.image = UIImage(named: "gato_sonriente00.jpeg");
+            self.etiquetaNombre.text = myCatObject?.getNombre();
+            
+        case 4:
+            self.cadena = myCatObject!.crearGato(nombre: "Sonrisas amarillo", color: "Amarillo", edad: 7); //create String from object
+            self.cajaDeTexto?.text = self.cadena;
+            self.catImageView.image = UIImage(named: "gato_sonriente01.jpg");
+            self.etiquetaNombre.text = myCatObject?.getNombre();
+            
+        default:
+            self.cadena = myCatObject!.crearGato(nombre: "El lentes", color: "Obscuro", edad: 7); //create String from object
+            self.cajaDeTexto?.text = self.cadena;
+            self.catImageView.image = UIImage(named: "gato_glasses.jpg");
+            self.etiquetaNombre.text = myCatObject?.getNombre();
+        }
     }
     @IBAction func jugar(_ sender: Any) {
     

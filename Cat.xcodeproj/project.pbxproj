@@ -15,6 +15,10 @@
 		A12E116423E3328D0056A6E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A12E116223E3328D0056A6E8 /* LaunchScreen.storyboard */; };
 		A12E116C23E332C80056A6E8 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12E116B23E332C80056A6E8 /* Cat.swift */; };
 		A12E116E23E33FE10056A6E8 /* pepito.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A12E116D23E33FE10056A6E8 /* pepito.jpg */; };
+		A167481023E9E5AF00D27E6B /* gato_sonriente00.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A167480D23E9E5AE00D27E6B /* gato_sonriente00.jpeg */; };
+		A167481123E9E5AF00D27E6B /* gato_sonriente01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A167480E23E9E5AF00D27E6B /* gato_sonriente01.jpg */; };
+		A167481223E9E5AF00D27E6B /* gato_ojos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A167480F23E9E5AF00D27E6B /* gato_ojos.jpg */; };
+		A167481423E9EC0E00D27E6B /* no_file_image.png in Resources */ = {isa = PBXBuildFile; fileRef = A167481323E9EC0D00D27E6B /* no_file_image.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		A12E116523E3328D0056A6E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A12E116B23E332C80056A6E8 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
 		A12E116D23E33FE10056A6E8 /* pepito.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pepito.jpg; sourceTree = "<group>"; };
+		A167480D23E9E5AE00D27E6B /* gato_sonriente00.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gato_sonriente00.jpeg; sourceTree = "<group>"; };
+		A167480E23E9E5AF00D27E6B /* gato_sonriente01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gato_sonriente01.jpg; sourceTree = "<group>"; };
+		A167480F23E9E5AF00D27E6B /* gato_ojos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gato_ojos.jpg; sourceTree = "<group>"; };
+		A167481323E9EC0D00D27E6B /* no_file_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = no_file_image.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +76,10 @@
 				A12E116223E3328D0056A6E8 /* LaunchScreen.storyboard */,
 				A12E116523E3328D0056A6E8 /* Info.plist */,
 				A12E116D23E33FE10056A6E8 /* pepito.jpg */,
+				A167480F23E9E5AF00D27E6B /* gato_ojos.jpg */,
+				A167480D23E9E5AE00D27E6B /* gato_sonriente00.jpeg */,
+				A167480E23E9E5AF00D27E6B /* gato_sonriente01.jpg */,
+				A167481323E9EC0D00D27E6B /* no_file_image.png */,
 				A12E116B23E332C80056A6E8 /* Cat.swift */,
 			);
 			path = Cat;
@@ -132,8 +144,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A12E116423E3328D0056A6E8 /* LaunchScreen.storyboard in Resources */,
+				A167481123E9E5AF00D27E6B /* gato_sonriente01.jpg in Resources */,
+				A167481423E9EC0E00D27E6B /* no_file_image.png in Resources */,
 				A12E116123E3328D0056A6E8 /* Assets.xcassets in Resources */,
 				A12E116E23E33FE10056A6E8 /* pepito.jpg in Resources */,
+				A167481223E9E5AF00D27E6B /* gato_ojos.jpg in Resources */,
+				A167481023E9E5AF00D27E6B /* gato_sonriente00.jpeg in Resources */,
 				A12E115F23E332890056A6E8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
