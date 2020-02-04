@@ -44,7 +44,7 @@ class Cat{
     func setEstado(estado: Bool){
         self.estado = estado;
     }
-    func getEsado()->Bool{
+    func getEstado()->Bool{
         return self.estado;
     }
     func setVidas(newValueVida: Int){
