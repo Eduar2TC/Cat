@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
@@ -76,6 +77,7 @@ class ViewController: UIViewController {
         }
         else if(myCatObject!.getVidas() <= 0){ // Cat is death
             self.cajaDeTexto?.text = "Hola soy \(self.myCatObject!.getNombre()) no puedo jugar ESTOY MUERTO :v"; // utilizar el simbolo "!" para imprimir la cadena
+            self.aullar();
         }
         
     }
@@ -91,7 +93,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func dormir(_ sender: Any) {
-        if(self.myCatObject?.getEstado() == true){ // verifying cat state
+        if(self.myCatObject?.getEstado() == true && myCatObject!.vida > 0){ // verifying cat state
             myCatObject?.setEstado(estado: false); // set cat state to NO sleeping
             if(self.myCatObject?.getEstado() == false){
                 self.cajaDeTexto?.text = "Hola soy \(self.myCatObject!.getNombre()) estoy durmiendo :v";
@@ -100,15 +102,21 @@ class ViewController: UIViewController {
                 self.cajaDeTexto?.text = "Hola soy \(self.myCatObject!.getNombre()) estoy despierto :v";
             }
         }
+        else{
+            self.cajaDeTexto?.text = "Hola soy \(self.myCatObject!.getNombre()) no puedo dormir estoy muerto :v";
+        }
     }
     
     @IBAction func despertar(_ sender: Any) {
-        if(self.myCatObject?.getEstado() == false){ // verifing sleeping state is true
+        if(self.myCatObject?.getEstado() == false && myCatObject!.vida > 0){ // verifing sleeping state is true
             self.myCatObject?.setEstado(estado: true); //set state to sleeping
             self.cajaDeTexto?.text = "Hola soy \(self.myCatObject!.getNombre()) estoy despierto :v";
         }
-        else{
+        else if(self.myCatObject?.getEstado() == true && myCatObject!.vida > 0){
             self.cajaDeTexto?.text = "Hola soy \(self.myCatObject!.getNombre()) actualmente estoy despierto :v";
+        }
+        else if (myCatObject!.vida <= 0){
+            self.cajaDeTexto?.text = "Hola soy \(self.myCatObject!.getNombre()) no puedo despertar estoy muerto :v";
         }
     }
     
@@ -120,6 +128,36 @@ class ViewController: UIViewController {
         else{
             self.cajaDeTexto.text = "Tu gato no hà sido creado";
         }
+    }
+    func aullar() {
+        var player = AVAudioPlayer();
+        if(myCatObject?.getNombre() != ""){
+            let alert = UIAlertController(title: "Upps!", message: "Estoy muerto", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title:"Aceptar", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            //-----
+            let audioFileUrl = Bundle.main.url(forResource: "aullido", withExtension: "mp3")
+            do{
+                try player = AVAudioPlayer(contentsOf: audioFileUrl!)
+            }
+            catch let error{
+                print(error.localizedDescription)
+            }
+            player.play()
+            //---
+            
+        }
+        else{
+            /*let audioFileUrl = Bundle.main.url(forResource: "aullido", withExtension: "mp3")
+            do{
+                try player = AVAudioPlayer(contentsOf: audioFileUrl!)
+            }
+            catch let error{
+                print(error.localizedDescription)
+            }
+            player.play()*/
+        }
+
     }
 }
 

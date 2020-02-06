@@ -77,5 +77,6 @@ class Cat{
             return "\(self.getNombre()) ya esta durmiendo...";
         }
     }
+    
     //end Methods
 }

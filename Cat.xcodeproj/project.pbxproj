@@ -19,6 +19,7 @@
 		A167481123E9E5AF00D27E6B /* gato_sonriente01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A167480E23E9E5AF00D27E6B /* gato_sonriente01.jpg */; };
 		A167481223E9E5AF00D27E6B /* gato_ojos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A167480F23E9E5AF00D27E6B /* gato_ojos.jpg */; };
 		A167481423E9EC0E00D27E6B /* no_file_image.png in Resources */ = {isa = PBXBuildFile; fileRef = A167481323E9EC0D00D27E6B /* no_file_image.png */; };
+		A1E72D4423EA2F0200599562 /* aullido.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A1E72D4323EA2F0200599562 /* aullido.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		A167480E23E9E5AF00D27E6B /* gato_sonriente01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gato_sonriente01.jpg; sourceTree = "<group>"; };
 		A167480F23E9E5AF00D27E6B /* gato_ojos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gato_ojos.jpg; sourceTree = "<group>"; };
 		A167481323E9EC0D00D27E6B /* no_file_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = no_file_image.png; sourceTree = "<group>"; };
+		A1E72D4323EA2F0200599562 /* aullido.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = aullido.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				A167480D23E9E5AE00D27E6B /* gato_sonriente00.jpeg */,
 				A167480E23E9E5AF00D27E6B /* gato_sonriente01.jpg */,
 				A167481323E9EC0D00D27E6B /* no_file_image.png */,
+				A1E72D4323EA2F0200599562 /* aullido.mp3 */,
 				A12E116B23E332C80056A6E8 /* Cat.swift */,
 			);
 			path = Cat;
@@ -149,6 +152,7 @@
 				A12E116123E3328D0056A6E8 /* Assets.xcassets in Resources */,
 				A12E116E23E33FE10056A6E8 /* pepito.jpg in Resources */,
 				A167481223E9E5AF00D27E6B /* gato_ojos.jpg in Resources */,
+				A1E72D4423EA2F0200599562 /* aullido.mp3 in Resources */,
 				A167481023E9E5AF00D27E6B /* gato_sonriente00.jpeg in Resources */,
 				A12E115F23E332890056A6E8 /* Main.storyboard in Resources */,
 			);
